@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <!-- <ion-button class="btn_back" routerLink="/tabs/tab1/unit-details"></ion-button> 
+        <img class="imgBack" src="/assets/arrow_left_white.png"> -->
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title class="header_title">Tenant Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="card-background-page" *ngFor="let res of tenants">
+    <ion-card class="banner-card">
+        <div class="banner-tenant">
+          <div class="img_tenant_border">
+              <div *ngIf="res.tUpload == ''" class="img_tenant"></div>
+              <div *ngIf="res.tUpload != ''" class="img_tenant" [style.background-image]="'url(https://www.asi-ph.com/sandboxes/condominium/'+res.tUpload+')'"></div>
+          </div>
+            <p class="tenant_name">{{res.fullname}}</p>
+            <p class="tenant_title">Tenant - {{res.pUnitRoom}}</p>
+        </div>
+    </ion-card>
+      
+    <ion-grid>
+      <ion-row class="tenant-row">
+        <ion-col size="12" class="col-tenant-details">
+          <p class="tenant_type">Email</p>
+          <p class="tenant_type_name">{{res.tEmailAddress}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Contact Number</p>
+            <p class="tenant_type_name">{{res.tPhoneNumber}}</p>
+          </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Gender</p>
+            <p class="tenant_type_name">{{res.tGender}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Occupation</p>
+            <p class="tenant_type_name">{{res.tOccupation}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Date of Birth</p>
+            <p class="tenant_type_name">{{res.tDate}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Move-in Date</p>
+            <p class="tenant_type_name">{{res.tMoveindate}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Intercom No.</p>
+            <p class="tenant_type_name">{{res.tItercom}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Turn-over Date</p>
+            <p class="tenant_type_name">{{res.tTurnoverdate}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Agreement Start Date</p>
+            <p class="tenant_type_name">{{res.tAgreementStart}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Agreement End Date</p>
+            <p class="tenant_type_name">{{res.tAgreementEnd}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

@@ -1,0 +1,31 @@
+
+<ion-header>
+    <ion-toolbar color="primary">
+        <!-- <ion-button class="btn_back" routerLink="/tabs/tab1/unit-details"></ion-button> 
+        <img class="imgBack" src="/assets/arrow_left_white.png"> -->
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title class="header_title">Resident Lists</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="card-background-page">
+    <ion-list>
+      <ion-item *ngFor="let res of users; let i = index" (click)="openResidentDetailsIndividual(res[i].id, this.pUnitRoom)">
+          <ion-avatar slot="start">
+            <img *ngIf="res[i].p_upload == ''" src="/assets/person.png">
+            <img *ngIf="res[i].p_upload != ''" src="https://www.asi-ph.com/sandboxes/condominium/{{res[i].p_upload}}">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{res[i].p_name}} {{res[i].p_lastname}}</h2>
+            <p class="text_gender"><img class="img_gender" src="/assets/gender_icon.png"> {{res[i].p_gender}}</p>
+            <p class="text_address"><img class="img_address" src="/assets/address_icon.png"> {{res[i].p_address}}</p>
+          </ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+
+
+  

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title class="header_title">Old Tenant Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let res of users; let i = index">
+      <ion-card-header>
+          <div *ngIf="res[i].tUpload == ''" class="img_old_tenant"></div>
+          <div *ngIf="res[i].tUpload != ''" class="img_old_tenant" [style.background-image]="'url(https://www.asi-ph.com/sandboxes/condominium/'+res[i].tUpload+')'"></div>
+        <ion-card-subtitle>{{res[i].fullname}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-grid class="nopad">
+            <ion-row>
+              <ion-col size="4" class="nopad">
+                <p>Email: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].tEmailAddress}}</p>
+              </ion-col>
+              <ion-col size="4" class="nopad">
+                <p>Contact No.: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].tPhoneNumber}}</p>
+              </ion-col>
+              <ion-col size="4" class="nopad">
+                  <p>Period: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].tMoveindate}} to {{res[i].tTurnoverdate}}</p>
+              </ion-col>
+              <ion-col size="4" class="nopad">
+                  <p>Agreement: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].tAgreementStart}} to {{res[i].tAgreementEnd}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card-content>
+    </ion-card>
+      
+</ion-content>

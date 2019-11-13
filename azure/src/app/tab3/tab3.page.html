@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="title_header">
+      Notifications
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-list>
+    <ion-list-header>Today</ion-list-header>
+    <ion-item class="new_opened" (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="12">
+                <p class="v_description"><span class="subject_name">Azure</span> approved your Visitor Request.</p>
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <p class="v-date">1 minute ago</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    <ion-item class="new_opened" (click)="openRulesDetails()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="12">
+                <p class="v_description"><span class="subject_name">Schedule for Smoke Emission</span> was added on your Notices.</p>
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <p class="v-date">1 minute ago</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    
+    <ion-item (click)="openRulesDetails()">
+        <ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="nopad" size="12">
+                  <p class="v_description"><span class="subject_name">Tower Crown Cleaning</span> was added on your Notices.</p>
+              </ion-col>
+              <ion-col class="nopad" size="12">
+                  <p class="v-date">1 minute ago</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+      <ion-item (click)="openBookingDetails()">
+        <ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="nopad" size="12">
+                  <p class="v_description">Reminder: <span class="subject_name">Azure beach booking</span> is Today!</p>
+              </ion-col>
+              <ion-col class="nopad" size="12">
+                  <p class="v-date">1 minute ago</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+      <ion-item (click)="openBookingDetails()">
+        <ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="nopad" size="12">
+                  <p class="v_description"><span class="subject_name">Azure Beach Booking 01/02/2020</span> was added on your list.</p>
+              </ion-col>
+              <ion-col class="nopad" size="12">
+                  <p class="v-date">1 minute ago</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+  </ion-list>
+
+</ion-content>
+  

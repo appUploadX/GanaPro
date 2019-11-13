@@ -1,0 +1,369 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons size="small" slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title class="header_title">Add Visitors Requests</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <ion-card-content class="bglinear cardcontent">
+      <ion-list class="bglinear">
+          <ion-item class="bglinear2 select-border-o">
+            <ion-label class="titlealert">Visitor Types</ion-label>
+            <ion-select class="titleselect" placeholder="Select One">
+              <ion-select-option value="f">Day Pass</ion-select-option>
+              <ion-select-option value="m">Staycation</ion-select-option>
+            </ion-select>
+          </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="show_modal">
+    <a (click)="openModal()">Show Description</a>
+  </div>
+
+  <ion-card class="title_type">
+    <p class="t_gaf">Guest Advise Form</p>
+    <p class="t_sub">Staycation</p>
+  </ion-card>
+
+
+  <div class="v_personal">
+    <div class="v_title_detail">Unit Owner/SPA/Staff Details</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Unit Owner/SPA Name <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Tower Unit Number <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Carpark Slot Number <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Visitors On-Site Contact Person <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Contact Number <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">Arrival/Departure Details</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Arrival Date <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Arrival Time <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Departure Date <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Departure Time <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">Primary Visitor Details</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Name of Primary Visitor <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Nationality <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Contact Number <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Email Address <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Address <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">Additional Visitor Details</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Count <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2 nopad">
+          <ion-col class="nopad" size="6">
+            <p class="font_semibold countAddV">Name</p>
+          </ion-col>
+          <ion-col class="nopad" size="6">
+            <p class="font_semibold countAddV">Type</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2">
+          <ion-col size="6">
+            <ion-input class="text_input" placeholder="Name"></ion-input>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item>
+              <ion-select class="selectadult" placeholder="Select One">
+                <ion-select-option value="f">Adult</ion-select-option>
+                <ion-select-option value="m">Children</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2">
+          <ion-col size="6">
+            <ion-input class="text_input" placeholder="Name"></ion-input>
+          </ion-col>
+          <ion-col size="6">
+            <ion-item>
+              <ion-select class="selectadult" placeholder="Select One">
+                <ion-select-option value="f">Adult</ion-select-option>
+                <ion-select-option value="m">Children</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">Additional Visitor Details</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label class="text_label" position="stacked">Count <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input class="text_input" required type="text"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2 nopad">
+          <ion-col class="nopad" size="3">
+            <p class="font_semibold countAddV">Type</p>
+          </ion-col>
+          <ion-col class="nopad" size="3">
+            <p class="font_semibold countAddV">Model</p>
+          </ion-col>
+          <ion-col class="nopad" size="3">
+            <p class="font_semibold countAddV">Color</p>
+          </ion-col>
+          <ion-col class="nopad" size="3">
+            <p class="font_semibold countAddV">Plate No.</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2">
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Type"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Model"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Color"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Plate No."></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row class="v-row2">
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Type"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Model"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Color"></ion-input>
+          </ion-col>
+          <ion-col size="3">
+            <ion-input class="text_input" placeholder="Plate No."></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">Additional Remarks</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <ion-input class="text_input" required type="text" placeholder="Type here..."></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_title_detail">To Be Filled By Admin</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <div class="remark_admin">
+                <p>Remark: </p>
+              </div>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+  <div class="v_personal">
+    <div class="v_title_detail">To Be Filled By Admin</div>
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row">
+          <ion-col size="12">
+            <ion-item>
+              <div class="remark_admin">
+                <p>Remark: </p>
+              </div>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <div class="v_personal">
+    <div class="v_details">
+      <ion-grid class="nopad">
+        <ion-row class="v-row nopad">
+          <ion-col size="12" class="nopad">
+            <p class="termsconditions">By clicking the <span class="font_semibold">"I Accept Terms and Conditions"</span> button below, I hereby declare that I understand and agree 
+              to all stipulations herewith and assume full responsibility for my visitors’/guests’ conduct and actions including but not limited to incurred 
+              monetary penalties, for the duration of their stay. All visitors/guests are to abide by the Building Policies and Procedures and AURRCC House 
+              Rules and Regulations. Violators of any of the provisions stipulated in the said documents will be penalized and are to pay the corresponding 
+              penalty fee. The Management reserves the right to refuse entry and/or escort erring guests out of the Property. The Developer/ AURRCC / Property 
+              Management Office shall not be liable for any untoward incident, accident, injury, loss of property, or lives that may arise from the guests‘ 
+              stay in Azure Urban Resort Residences.</p>
+            
+          </ion-col>
+          <ion-col size="12" class="nopad">
+            <ion-item>
+              <ion-checkbox color="primary" slot="start"></ion-checkbox>
+              <ion-label class="text_terms">I Accept Terms and Conditions</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <ion-grid class="btns">
+      <ion-row class="v-row pt-0">
+          <ion-col size="6" class="pt-0">
+            <ion-button color="primary" expand="block">Cancel</ion-button>
+          </ion-col>
+          <ion-col size="6" class="pt-0">
+            <ion-button color="primary" expand="block">Submit</ion-button>
+          </ion-col>
+        </ion-row>
+  </ion-grid>
+
+  
+
+
+</ion-content>

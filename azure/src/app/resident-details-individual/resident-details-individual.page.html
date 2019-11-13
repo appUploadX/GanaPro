@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <!-- <ion-button class="btn_back" routerLink="/tabs/tab1/unit-details/resident-details-list"></ion-button> 
+        <img class="imgBack" src="/assets/arrow_left_white.png"> -->
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title class="header_title">Resident Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="card-background-page" *ngFor="let res of users">
+    <ion-card class="banner-card">
+        <div class="banner-tenant">
+          <div class="img_tenant_border">
+              <div *ngIf="res.tUpload == ''" class="img_tenant"></div>
+              <div *ngIf="res.tUpload != ''" class="img_tenant" [style.background-image]="'url(https://www.asi-ph.com/sandboxes/condominium/'+res.p_upload+')'"></div>
+          </div>
+            <p class="tenant_name">{{res.p_name}} {{res.p_middle}} {{res.p_lastname}}</p>
+            <p class="tenant_title">{{res.owner}} - {{res.pUnitCode}} </p>
+        </div>
+    </ion-card>
+      
+    <ion-grid>
+      <ion-row class="tenant-row">
+        <ion-col size="12" class="col-tenant-details">
+          <p class="tenant_type">Email</p>
+          <p class="tenant_type_name">{{res.p_emailaddress}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Contact Number</p>
+            <p class="tenant_type_name">{{res.p_phonenumber}}</p>
+          </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Gender</p>
+            <p class="tenant_type_name">{{res.p_gender}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Relation</p>
+            <p class="tenant_type_name">{{res.p_relationofowner}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Date of Birth</p>
+            <p class="tenant_type_name">{{res.p_dateofbirth}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Move-in Date</p>
+            <p class="tenant_type_name">{{res.p_moveindate}}</p>
+        </ion-col>
+        <ion-col size="12" class="col-tenant-details">
+            <p class="tenant_type">Address</p>
+            <p class="tenant_type_name">{{res.p_address}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

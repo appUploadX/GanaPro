@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+
+.font_reg {
+    font-family: 'Assistant_reg';
+}
+.font_light {
+    font-family: 'Assistant_light';
+}
+.font_semibold {
+    font-family: 'Assistant_semibold';
+}
+.font_bold {
+    font-family: 'Assistant_bold';
+}
+.font_extrabold {
+    font-family: 'Assistant_extrabold';
+}
+
+ion-content {
+    font-family: 'Assistant_reg';
+}
+ion-grid {
+    padding: 0 20px;
+}
+.v_description p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.btn_close {
+    text-transform: inherit;
+    font-family: "Assistant_reg";
+    font-size: 18px;
+    font-weight: 600;
+}
+

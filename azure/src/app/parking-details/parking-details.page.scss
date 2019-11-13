@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+
+.card-background-page {
+
+    ion-card-subtitle {
+        margin-top: 15px;
+        color: #fff;
+        font-size: 14px;
+        border-bottom: 2px solid #629ed8;
+        padding-bottom: 5px;
+    }
+    ion-card-content {
+        padding: 0 20px 20px 20px;
+    }
+    .nopad {padding: 0;}
+    ion-card {
+        background: linear-gradient(to right, #0553ad, #056de4);
+    }
+    ion-card-header {
+        padding-bottom: 5px;
+    }
+    ion-card-content p {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 6px;
+        color: #fff;
+        font-size: 13px;
+    }
+}

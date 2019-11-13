@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+.btn_back {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    --background: transparent;
+    --box-shadow: none;
+    width: 30px;
+    height: 25px;
+    z-index: 1;
+    --background-hover: transparent;
+    --background-activated: transparent;
+    --background-focused: transparent;
+}
+.imgBack {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    z-index: 0;
+}
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+
+.card-background-page {
+    .img_gender {
+        width: 13px;
+    }
+    .img_address {
+        width: 10px;
+    }
+    .text_gender, .text_address {
+        font-size: 14px;
+    }
+    ion-avatar {
+        width: 55px;
+        height: 55px;
+    }
+    ion-avatar img {
+        border-radius: 50%;
+    }
+}

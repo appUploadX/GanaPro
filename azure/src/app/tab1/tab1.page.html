@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Azure-Connect</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-card class="welcome-card">
+        <div class="overlay"></div>
+        <div class="inline-block">
+            <div class="card-title">Azure Urban Resort</div>
+            <div class="card-subtitle">Residences</div>
+        </div>
+        
+    </ion-card>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col size="6" size-xs="6" size-sm="6" size-md="6" size-lg="6">
+                <a class="btn_a" (click)="openUnitDetailsInTabs()">
+                    <ion-card color="white" class="menucards nomargbot">
+                        <ion-card-header>
+                            <img class="imgmenus" src="assets/unit.png">
+                            <ion-card-subtitle class="menutitles">Unit Details</ion-card-subtitle>
+                        </ion-card-header>
+                    </ion-card>
+                </a>
+            </ion-col>
+            <ion-col size="6" size-xs="6" size-sm="6" size-md="6" size-lg="6">
+                <a class="btn_a" (click)="openAmenitiesInTabs()">
+                    <ion-card color="white" class="menucards nomargbot">
+                        <ion-card-header>
+                            <img class="imgmenus" src="assets/amenities.png">
+                            <ion-card-subtitle class="menutitles">Amenities</ion-card-subtitle>
+                        </ion-card-header>
+                    </ion-card>
+                </a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="6" size-xs="6" size-sm="6" size-md="6" size-lg="6">
+                <a class="btn_a" (click)="openNoticeInTabs()">
+                    <ion-card color="white" class="menucards">
+                        <ion-card-header>
+                            <img class="imgmenus" src="assets/notice.png">
+                            <ion-card-subtitle class="menutitles">Notice</ion-card-subtitle>
+                        </ion-card-header>
+                    </ion-card>
+                </a>
+            </ion-col>
+            <ion-col size="6" size-xs="6" size-sm="6" size-md="6" size-lg="6">
+                <a class="btn_a" (click)="openVisitorsInTabs()">
+                    <ion-card color="white" class="menucards">
+                        <ion-card-header>
+                            <img class="imgmenus" src="assets/visitors.png">
+                            <ion-card-subtitle class="menutitles">Visitors</ion-card-subtitle>
+                        </ion-card-header>
+                    </ion-card>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

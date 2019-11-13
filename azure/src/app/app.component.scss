@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+
+body, p, h1, h2, h3, h4, h5, span, div {
+    font-family: 'Assistant_reg';
+}

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+h2,
+p,
+ ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+
+
+.loginbg {
+    --background: #072549;
+}
+
+ion-col div {
+    background-color: #191a30;
+    border: 1px solid #191a30;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.box h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Assistant_bold';
+
+}
+.box input[type = "text"], .box input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0653ac;
+    padding: 14px 10px;
+    width: 240px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus {
+    width: 260px;
+    border-color: #0967d3;
+}
+.box input[type = "submit"] {
+    border: 0;
+    background: linear-gradient(to right, #0967d3, #09a0d3);
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    color: white;
+    border-radius: 24px;
+    text-transform: uppercase;
+    font-family: 'Assistant_bold';
+}
+

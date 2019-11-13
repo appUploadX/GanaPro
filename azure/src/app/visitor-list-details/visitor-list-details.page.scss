@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+
+.nopad {padding: 0;}
+
+.card-background-page {
+    --background: #d3d5de;
+
+    .visitor_title_div {
+        background: linear-gradient(to right, #35343e, #5e5b6a);
+        padding: 4px;
+        border-radius: 5px;
+        margin: 13px 11px;
+    }
+    .visitor_title {
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Assistant_bold';
+        margin-top: 10px;
+        color: #ffffff;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    .visitor_type_title {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Assistant_bold';
+        text-transform: uppercase;
+        margin-top: 0;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .v_title_detail {
+        background: #eceef7;
+        padding: 5px 11px;
+        color: #292929;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: "Assistant_semibold";
+    }
+    .show_modal {
+        margin: 0 11px;
+        text-align: right;
+    }
+    .show_modal a {
+        color: #0062d2;
+    }
+    .v-row {
+        border-bottom: 1px solid #e4e4e4;
+        padding: 6px 7px;
+    }
+    .v_personal {
+        background: #fff; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .underline {
+        border-bottom: 1px solid #fff;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 4px;
+    }
+    .v_details p {
+        margin: 0;;
+        font-size: 14px;
+        color: #393939;
+    }
+    .text-right {text-align: right;}
+
+}

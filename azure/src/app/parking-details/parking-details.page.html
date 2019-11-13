@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title class="header_title">Parking Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+    
+<ion-content class="card-background-page">
+    <ion-card *ngFor="let res of users; let i = index">
+      <ion-card-header>
+        <ion-card-subtitle>{{res[i].pprefix}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-grid class="nopad">
+            <ion-row>
+              <ion-col size="4" class="nopad">
+                <p>Status: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].pallocation}}</p>
+              </ion-col>
+              <ion-col size="4" class="nopad">
+                  <p>Building: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].buildingX}}</p>
+              </ion-col>
+              <ion-col size="4" class="nopad">
+                <p>Floor: </p>
+              </ion-col>
+              <ion-col size="8" class="nopad">
+                <p>{{res[i].pfloor}}{{res[i].floorX}} Floor</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

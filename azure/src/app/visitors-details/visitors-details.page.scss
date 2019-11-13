@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+.selectitemtoolbar {
+    height: 40px;
+    --background: #d6e0ed;
+}
+.selecttoolbar {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-bottom: 5px;
+    --padding-top: 0px;
+    max-width: 100%;
+    font-size: 14px;
+}
+.toolbar2 {
+    --background: #eff4fb;
+}
+
+
+.card-background-page {
+    .identify_unit {
+        position: absolute;
+        font-size: 14px;
+        top: 15px;
+        margin: 0;
+        right: 15px;
+        font-family: 'Assistant_bold';
+        color: #777777;
+        z-index: 9;
+    }
+    .nopad {padding: 0;}
+    .v_name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #2f2f2f;
+    }
+    .v-date {
+        text-align: right;
+        color: #595959;
+        font-size: 13px;
+        margin-right: 50px;
+    }
+    .v-status.approved {
+        font-size: 12px;
+        margin-top: 2px;
+        color: #0967d3;
+    }
+    .v-status.v_cancelled {
+        font-size: 12px;
+        margin-top: 2px;
+        color: #ca0808;
+    }
+    .v-status.v_expired {
+        font-size: 12px;
+        margin-top: 2px;
+        color: #711d1d;
+    }
+    .img_arrow {
+        width: 20px;
+        position: absolute;
+        top: 7.4px;
+        right: 0;
+    }
+
+    ion-list {
+        margin-bottom: 20px;
+    }
+    ion-list-header {
+        color: #5f5f5f;
+        font-weight: 600;
+    }
+}

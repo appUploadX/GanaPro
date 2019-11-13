@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+p,
+ion-content {font-family: 'Assistant_reg'; color: #323232;}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+
+.card-background-page {
+    --background: #d3d5de;
+
+    .v_personal {
+        background: #fff; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .v-row {
+        border-bottom: 1px solid #e4e4e4;
+        padding: 6px 7px;
+    }
+    .v_details p {
+        margin: 0;;
+        font-size: 14px;
+        color: #393939;
+    }
+    .text_label {
+        font-size: 14px;
+    }
+    .text_input {
+        font-size: 14px;
+    }
+    .marg0auto {
+        margin: 0 auto;
+    }
+}

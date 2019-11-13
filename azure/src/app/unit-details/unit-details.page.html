@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <!-- <ion-button class="btn_back" routerLink="/tabs/tab1"></ion-button> 
+      <img class="imgBack" src="/assets/arrow_left_white.png"> -->
+      <ion-buttons size="small" slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title class="header_title">Unit Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card class="welcome-card"></ion-card>
+  <div class="building_div"></div>
+
+  <ion-grid class="building_details_grid" fixed *ngFor="let res of users">
+      <ion-row class="building_details_row">
+          <ion-col size="12">
+            <p class="building_title">{{res.propertyBuilding}}</p>
+          </ion-col>
+          <ion-col size="12" class="pb-0">
+              <p class="floor_text"><img class="img_floor" src="/assets/floors.png"> <span>{{res.floorNoX}} Floor</span></p>
+          </ion-col>
+          <ion-col size="12">
+              <p class="floor_text"><img class="img_floor" src="/assets/unit_door.png"> <span>Unit {{res.pUnitRoom}}</span></p>
+          </ion-col>
+          <ion-col size="12">
+              <hr class="hr_line">
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col size="12">
+              <div class="scroll_unit_plan">
+                  <ion-card class="unit_plan_details_card">
+                      <ion-card-header>
+                        <img class="img_bedroom" src="/assets/icon_bed.png">
+                        <ion-card-subtitle class="unit_bedroom">{{res.pBedrooms}} Bedroom</ion-card-subtitle>
+                      </ion-card-header>
+                  </ion-card>
+                  <ion-card class="unit_plan_details_card">
+                      <ion-card-header>
+                        <img class="img_bedroom" src="/assets/icon_hall.png">
+                        <ion-card-subtitle class="unit_bedroom">{{res.pHall}}</ion-card-subtitle>
+                      </ion-card-header>
+                  </ion-card>
+                  <ion-card class="unit_plan_details_card">
+                      <ion-card-header>
+                        <img class="img_bedroom" src="/assets/icon_balcony.png">
+                        <ion-card-subtitle class="unit_bedroom">{{res.pBalcony}} Balcony</ion-card-subtitle>
+                      </ion-card-header>
+                  </ion-card>
+                  <ion-card class="unit_plan_details_card">
+                      <ion-card-header>
+                        <img class="img_bedroom" src="/assets/icon_toilet.png">
+                        <ion-card-subtitle class="unit_bedroom">{{res.pWashrooms}} Washroom</ion-card-subtitle>
+                      </ion-card-header>
+                  </ion-card>
+                  <ion-card class="unit_plan_details_card">
+                      <ion-card-header>
+                        <img class="img_bedroom" src="/assets/icon_unit.png">
+                        <ion-card-subtitle class="unit_bedroom">{{res.pUnitSizeRangeX}}</ion-card-subtitle>
+                      </ion-card-header>
+                  </ion-card>
+              </div>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button expand="block" (click)="openTenantDetailsInTabs(res.tenantCode, res.pUnitRoom)" color="primary">Tenant Details</ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button expand="block" *ngIf="res.tenantCode == ''"  (click)="openResidentDetailsListInTabs(res.unit_code, 'Owner', res.pUnitRoom)" color="primary">Resident Details</ion-button>
+          <ion-button expand="block" *ngIf="res.tenantCode != ''"  (click)="openResidentDetailsListInTabs(res.tenantCode, 'Tenant', res.pUnitRoom)" color="primary">Resident Details</ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button expand="block" (click)="openParkingDetails(res.property_code, res.floorNo, res.roomNo, res.propertyBuilding)" color="primary">Parking Details</ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button expand="block" (click)="openOldTenantDetails(res.unit_code)" color="primary">Old Tenant Details</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  
+</ion-content>
+
+

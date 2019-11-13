@@ -1,0 +1,217 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons size="small" slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title class="header_title">Visitors Requests</ion-title>
+    </ion-toolbar>
+    <ion-toolbar class="toolbar2">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item class="selectitemtoolbar">
+              <ion-select class="selecttoolbar" placeholder="View">
+                <ion-select-option value="f">Today</ion-select-option>
+                <ion-select-option value="m">By Month</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+
+          <ion-col size="6">
+            <ion-item class="selectitemtoolbar">
+                <ion-select class="selecttoolbar" placeholder="Month">
+                    <ion-select-option value="01">January</ion-select-option>
+                    <ion-select-option value="02">February</ion-select-option>
+                    <ion-select-option value="03">March</ion-select-option>
+                    <ion-select-option value="04">April</ion-select-option>
+                    <ion-select-option value="05">May</ion-select-option>
+                    <ion-select-option value="06">June</ion-select-option>
+                    <ion-select-option value="07">July</ion-select-option>
+                    <ion-select-option value="08">August</ion-select-option>
+                    <ion-select-option value="09">September</ion-select-option>
+                    <ion-select-option value="10">October</ion-select-option>
+                    <ion-select-option value="11">November</ion-select-option>
+                    <ion-select-option value="12">December</ion-select-option>
+                  </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content class="card-background-page">
+  <p class="identify_unit">UNIT 101</p>
+  <!-- PLUS BUTTON TO ADD VISITOR REQUEST -->
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="primary" (click)="openAddVisitorRequest()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-list>
+    <ion-list-header>November</ion-list-header>
+
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Hanah Salazar</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status approved">Approved</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Duane Brick</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status v_cancelled">Cancelled</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Hanah Salazar</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status approved">Approved</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Duane Brick</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status v_cancelled">Cancelled</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>September</ion-list-header>
+      <ion-item (click)="OpenVisitorListDetals()">
+        <ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="nopad" size="6">
+                  <h2 class="v_name">Duane Brick</h2>
+              </ion-col>
+              <ion-col class="nopad" size="6">
+                  <p class="v-date">1-Jul-2019</p>
+                  <img class="img_arrow" src="assets/arrow_right_blue.png">
+              </ion-col>
+              <ion-col class="nopad" size="12">
+                  <h3 class="v-status v_expired">Expired</h3>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+      <ion-item (click)="OpenVisitorListDetals()">
+        <ion-label>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="nopad" size="6">
+                  <h2 class="v_name">Duane Brick</h2>
+              </ion-col>
+              <ion-col class="nopad" size="6">
+                  <p class="v-date">1-Jul-2019</p>
+                  <img class="img_arrow" src="assets/arrow_right_blue.png">
+              </ion-col>
+              <ion-col class="nopad" size="12">
+                  <h3 class="v-status v_expired">Expired</h3>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-label>
+      </ion-item>
+
+      
+    </ion-list>
+
+  <ion-list>
+    <ion-list-header>August</ion-list-header>
+
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Duane Brick</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status v_expired">Expired</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+
+    <ion-item (click)="OpenVisitorListDetals()">
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="nopad" size="6">
+                <h2 class="v_name">Duane Brick</h2>
+            </ion-col>
+            <ion-col class="nopad" size="6">
+                <p class="v-date">1-Jul-2019</p>
+                <img class="img_arrow" src="assets/arrow_right_blue.png">
+            </ion-col>
+            <ion-col class="nopad" size="12">
+                <h3 class="v-status v_expired">Expired</h3>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

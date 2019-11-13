@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Assistant_light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-light.woff2);
+}
+@font-face {
+    font-family: 'Assistant_reg';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-reg.woff2);
+}
+@font-face {
+    font-family: 'Assistant_semibold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-semibold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-bold.woff2);
+}
+@font-face {
+    font-family: 'Assistant_extrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(/assets/fonts/assistant-extrabold.woff2);
+}
+ion-content {font-family: 'Assistant_reg';}
+
+.font_reg {font-family: 'Assistant_reg';}
+.font_light {font-family: 'Assistant_light';}
+.font_semibold {font-family: 'Assistant_semibold';}
+.font_bold {font-family: 'Assistant_bold';}
+.font_extrabold {font-family: 'Assistant_extrabold';}
+
+.card-background-page {
+    .pb-0 {padding-bottom: 0;}
+    .m-0 {margin: 0;}
+    .welcome-card {
+        position: relative;
+        background-image: url('/assets/unitbg2.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        margin: 0;
+        height: 20vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    .building_div {
+        background-image: url(/assets/condo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 5px solid #ffffff;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 13%;
+        left: 16px;
+        border-radius: 4px;
+
+    }
+    .hr_line {
+        background: #a0a0a0;
+        height: 2px;
+        margin: 0;
+    }
+    .building_details_row {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .building_details_grid {
+        margin-bottom: 20px;
+    }
+    .building_title {
+        font-weight: bold;
+        color: #656464;
+        margin-bottom: 0;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .img_floor {
+        width: 18px;
+        margin-right: 4px;
+    }
+    .floor_text {
+        color: #656464;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .floor_text span {
+        height: auto;
+        position: absolute;
+        top: 8px;
+    }
+    .unit_bedroom {
+        font-weight: 400;
+        text-transform: inherit;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    .img_bedroom {width: 20px;}
+    .unit_plan_details_card {
+        margin: 0;
+        width: 110px;
+        display: inline-block;
+        margin-right: 13px;
+    }
+    .scroll_unit_plan {
+        height: 96px;
+        margin: 0 10px;
+        padding: 4px 4px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .scroll_unit_plan::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .unit_plan_details_card ion-card-header {
+        padding: 15px;
+    }
+
+}
+
+.imgBack {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    z-index: 0;
+}
+.header_title {
+    text-align: center;
+}
+ion-back-button {
+    position: absolute;
+}
+.btn_back {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    --background: transparent;
+    --box-shadow: none;
+    width: 30px;
+    height: 25px;
+    z-index: 1;
+    --background-hover: transparent;
+    --background-activated: transparent;
+    --background-focused: transparent;
+}
